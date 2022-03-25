@@ -27,4 +27,12 @@ Estudos de HTML5 e CSS3 com base no Livro HTML5 e CSS3 Domine a Web do Futuro- L
 ## Praticas:
 
 * [Animações:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/Anima%C3%A7%C3%B5es/)
+* [Estoque de Livros:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/Estoque%20de%20Livros/)
+* [Formulário:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/Formul%C3%A1rio/)
+* [Janela Modal:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/Janela%20Modal/)
+* [Organização de Elementos:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/Organiza%C3%A7%C3%A3o%20de%20elementos/)
+* [Exemplos Gerais:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/exemplos%20gerais/)
+* [Imagem:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/imagem/)
+* [impressão:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/impressao/)
+* [Pagina:](https://katianne23.github.io/Estudo-HTML5-e-CSS3/pagina/)
 
