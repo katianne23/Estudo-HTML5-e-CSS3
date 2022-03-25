@@ -1,0 +1,47 @@
+body{
+    background-color: aliceblue;
+    
+}
+h1{
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+ul{
+
+    list-style: none;
+    padding: 0;
+   
+}
+
+li{
+  
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    transition: transform 0.2s linear;
+  
+}
+
+span{
+    color: #153755;
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+}
+li:nth-child(even){
+    transform: translateY(10px);
+}
+li:nth-child(odd){
+    transform: translateY(-10px);
+}
+li:hover{
+    transform: scale(1.3);
+    z-index: 1;
+}
+.font{
+    font-size: 0.7em;
+}

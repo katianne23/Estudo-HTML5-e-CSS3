@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Formualários usando placeholder</h1>
+    <form method="post" action="">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" placeholder="Usuário">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Senha">
+        <button>Entrar no site</button>
+    </form>
+    <!--Função para navegadores que não suportam o placeholder-->
+    <script>
+        jQuery(function($) {
+function supportsPlaceholder() {
+return 'placeholder' in document.createElement('input') &&
+'placeholder' in document.createElement('textarea');
+}
+if(!supportsPlaceholder()) {
+$('html').addClass('no-placeholder');
+}
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    background-color: beige;
+}
+
+figure{
+    position: relative;
+
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+img{
+    display: block;
+}
+
+figcaption{
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 5px;
+    color: #fff;
+    margin: 0 5px;
+    padding: 5px;
+    position: absolute;
+    width: 300px;
+}

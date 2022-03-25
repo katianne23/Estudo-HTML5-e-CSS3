@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'IconicFill';
+src: url('iconic_fill.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+section{
+    border: 1px solid #000;
+    height: 100px;
+    margin: 40px;
+    width: 400px;
+ 
+}
+.clear{
+    clear: both;
+}
+h1{
+    background-color: #990000;
+    color: #fff;
+    font-size: 1.2rem;
+    left: -10px;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    width: 420px;
+
+}
+
+h1::before{
+    border-color: transparent #7c0000 #7c0000 transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -10px;
+}
+
+h1::after{
+    border-color: transparent transparent #7c0000 #7c0000 ;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+.help{
+    background-color: #f1efe6;
+    border: 1px solid #d3cdae;
+    box-shadow: 3px 3px 3px #AAA;
+    font-size: 0.9rem;
+    left: 80px;
+    padding: 10px;
+    position: relative;
+    width: 300px;
+}
+.help::before{
+    border-color: transparent #D3CDAE transparent transparent;
+border-style: solid;
+border-width: 14px;
+content: "";
+left: -28px;
+margin-top: -14px;
+position: absolute;
+top: 50%;
+}
+
+.tip::before{
+    content: "\261E";
+    margin-right: 10px;
+}
+
+blockquote{
+    color: #444;
+    font-style: italic;
+}
+
+blockquote::before, blockquote::after{
+    color: #000;
+    font-size: 3em;
+}
+
+blockquote::before{
+    content: "\201C";
+}
+blockquote::after{
+    content: "\201D";
+}
+
+.button {
+    background-color: #999999;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: #389739;
+}
+
+.big-button {
+    font-size: 1.1em;
+}
+
+.small-button {
+    font-size: 0.9em;
+}
+
+h2{
+    background-color: #1D9AC0;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.icon-next::after{
+    content: "\2192";
+    font-family: "IconicFill";
+    margin-left: 10px;
+}
+h3.icon-next{
+    color: blue;
+}
+
+.icon-ok{
+    color: #489D00;
+}
+
+.icon-ok::before{
+    content: "\2714";
+    font-family: "IconicFill";
+    margin-right: 10px;
+}
+.icon-invalid{
+    color: #990000;
+}
+
+.icon-invalid::before{
+    content: "\2718";
+    font-family: "IconicFill";
+    margin-right: 10px;
+}
+.tnt{
+    border-radius: 50%;
+    border: 5px solid #000;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+
+}
+
+.counter{
+    background-color: #000;
+    border-top-left-radius: 25px 10px;
+    border-top-right-radius: 25px 10px;
+    color: white;
+    display: block;
+    font-size: 1.7em;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.div{
+    background-color: #000;
+    width: 50px;
+    height: 10px;
+    padding: 20px 50px;
+}
+
+.cloud{
+    background-color: #fff;
+    border-radius: 48px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 48px;
+}
+
+.cloud::before, .cloud::after{
+    background-color: #FFF;
+    border-radius: 50%;
+    content: "";
+    height: 14px;
+    position: absolute;
+    right: 7px;
+    top: -6px;
+    width: 14px;
+}
+
+.cloud::after {
+    background-color:#FFF;
+    height: 23px;
+    left: 7px;
+    right: auto;
+    top: -10px;
+    width: 23px;
+}
+
+.ul{
+    background-color: #389739;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
+    height: 35px;
+    list-style: none;
+    padding: 0;
+    width: 210px;
+}
+.li{
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    float: left;
+    line-height: 35px;
+    font-size: 00.9em;
+    width: 50px;
+    text-align: center;
+}
+
+.li:first-child{
+    border-left: none;
+
+}
+
+.li:last-child{
+    border-right: none;
+}
+
+.di{
+  font-weight: bold;
+  height: 50px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 220px;
+  
+}
+
+.blue {
+    background-color: #4377FA; /* A cor superior do gradiente como fundo */
+    background-image: linear-gradient(top, #4377FA, #0537B7);
+}
+
+.reverse-blue {  
+    background-color: #0537B7; 
+    background-image: linear-gradient(top, #0537B7, #4377FA);
+}
+
+.omg-pink {
+    background-color: #FC0050;
+    background-image: linear-gradient(top right, #FC0050, #FF79A3);
+}
+
+.stops {
+    background-color: #F5B951;
+    background-image: linear-gradient(top, #F5B951 48%, #F2A31C 56%);
+}
+
+input{
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25) inset;
+    padding: 2px 5px;
+}
+input:focus{
+    border-color: #35861B;
+    box-shadow: 0 0 5px #35861B, 2px 2px 2px rgba(0,0,0,0.25) inset;
+    outline: none;
+}
+
+.nav{
+    background-color: #B9522D;
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    width: 210px;
+}
+
+.nav li{
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 70px;
+}
+
+.nav a{
+    color: white;
+}
+.nav .current{
+    background-color: #A64A28;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.status{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    font-weight: bold;
+    padding: 7px 10px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.failed{
+    background-color: #BD2C00;
+}
+
+.shipped{
+    background-color: #6CC644;
+}
+
+.processing{
+    background-color: #FC9800;
+}
+
+.p{
+    background-color: limegreen;
+}
+
+.span{
+    background-color: lightblue;
+}
+.inblo{
+    display: inline-block;
+    background-color: lightblue;
+}
+
+.h3{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+h4{
+    margin-top: 20px;
+}
+
+.img{
+    float: left;
+    margin-right: 10px;
+}
+
+.box{
+    background-color: papayawhip;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 30px;
+    left: 5px;
+}
+
+.abs{
+    background-color: lightblue;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+header {
+    margin-top: 30px;
+    position: relative;
+}
+
+.col{
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 1px solid #666;
+    font-size: 00.9em;
+    width: 500px;
+}
+
+.flexbox{
+    /*
+    De acordo com a nova especificação, o valor "flexbox"
+    deverá ser substituído por apenas "flex".
+    */
+    display: flex;
+    height: 60px;
+    width: 300px;
+}
+
+.boxs{
+    color: #FFF;
+    display: block;
+    flex: auto;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.one {
+    background-color: #8820DD;
+ }
+.two {
+    background-color: #2BB15A; 
+}
+.three { 
+    background-color: #755322; 
+}
+.four { 
+    background-color: #02A3A3; 
+}
+.five { 
+    background-color: #C6363D; 
+}

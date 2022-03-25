@@ -1,0 +1,94 @@
+
+table {
+    width: 500px;
+}
+td {
+    border: 1px dotted #666;
+    padding: 5px;
+}
+td a {
+    color: #3B5998;
+}
+.expense, .profit, .actions {
+    text-align: right;
+}
+.expense, .profit {
+    font-weight: bold;
+}
+.expense { color: red; 
+}
+.profit { color: green; 
+}
+.actions a {
+font-size: 0.9em;
+color: white;
+padding: 2px 5px;
+background-color: #3B5998;
+text-decoration: none;
+}
+
+
+@media print {
+    *{
+        color: #000 !important;
+    }
+    
+    table{
+        width: 100%;
+    }
+    td{
+        border-color: #000 ;
+    }
+    a::after {
+        content: "(" attr(href) ")";
+        margin-left: 2px;
+    }
+    .actions {
+        display: none;     
+    }
+    .expense::before{
+        content: "- ";
+    }
+    .expense::after{
+        content: " - Despesa";
+    }
+    .profit::before{
+        content: "+ ";
+    }
+    .profit::after{
+        content: " - Receita ";
+    }
+}
+
+/*COnfiguração de impressão
+@media print{
+    *{
+        background: transparent !important;
+        border-color: #000 !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        text-shadow: none !important;
+    }
+    a {
+        text-decoration: underline !important ;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    a[href^="javascript:"]::after, a[href^="#"]::after {
+        content: "";
+    }
+
+    quebra de página entre um post e outro.
+    article {
+       page-break-after: always;
+    }
+    conteúdo de um parágrafo não deve ser quebrado entre duas páginas.
+    p {
+       page-break-inside: avoid;
+    }
+}
+*/

@@ -1,0 +1,71 @@
+label{
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 90px;
+}
+
+input, textarea{
+    border: 1px solid #CCC;
+    box-shadow: inset 2px 2px 2px #EEE;
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 2px 5px;
+    width: 200px;
+}
+
+textarea{
+    height: 100px;
+}
+
+.hint{
+    background-color: #FFFBE4;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    display: inline-block; /* Colocamos o `inline-block` de volta. */
+    font-size: 0.8em;
+    opacity: 0; /* Remove a opacidade do elemento para escondê-lo. */
+    padding: 3px;
+    transition: opacity 0.5s, margin-left 0.5s;
+}
+
+input:focus + .hint, textarea:focus + .hint{
+    margin-left: 20px;
+    opacity: 1;
+}
+
+.error{
+    color: red;
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 5px 0 0 90px;
+}
+
+button{
+    background-color: #E5E5E5;
+    background-image: linear-gradient(top, #FFF, #E5E5E5);
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    color: #000;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+button:hover{
+    background-color: #285582;
+    background-image: linear-gradient(top, #3775B3, #285582);
+    border-color: #204569;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 3px #3775B3;
+    color: #FFF;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);
+}
+
+button:active{
+    background-color: #204569;
+    background-image: none;
+    border-color: #1A3754;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.15);
+}

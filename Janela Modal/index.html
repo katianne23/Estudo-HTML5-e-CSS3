@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Criando Janela Modal</title>
+</head>
+<body>
+    <h2>Criando Janela Modal</h2>
+    <div class='notice'>
+        <h1>Atenção</h1>
+        <p>Aqui você pode exibir alguma mensagem importante, que ela irá
+        sobrepor todo o conteúdo do seu site.
+        </p>
+        
+        <a href='javascript:;' class='close'>Fechar</a>
+      </div>
+      <div class="overlay"></div>
+
+
+<script type="text/javascript" >
+    $('#show-modal').on('click', function() {
+    $('.overlay, .notice').show();
+});
+$('.overlay, .close').on('click', function() {
+    $('.overlay, .notice').hide();
+ });
+</script>
+</body>
+</html>
